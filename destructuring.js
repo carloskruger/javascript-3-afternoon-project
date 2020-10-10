@@ -101,7 +101,12 @@ function ingredients(obj){
 
 //Code Here
 
-
+function largeNumbers(...obj){
+  let smallest = 0
+  if (first < second && first < third) return first
+  if (second < first && second < third) return second
+  if (third < first && third < second) return third
+}
 
 ////////// PROBLEM 6 //////////
 
