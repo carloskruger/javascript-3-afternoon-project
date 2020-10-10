@@ -76,7 +76,7 @@ function totalPopulation(obj){
 function ingredients(obj){
   const {carb, fat, protein} = obj
   let carbohydrates = carb
-  let fats = fal
+  let fats = fat
   let proteins = protein
   let newArray = []
   newArray.push(carbohydrates)
@@ -101,7 +101,8 @@ function ingredients(obj){
 
 //Code Here
 
-function largeNumbers(...obj){
+function largeNumbers(obj){
+  const {first, second, third} = obj
   let smallest = 0
   if (first < second && first < third) return first
   if (second < first && second < third) return second
@@ -118,4 +119,10 @@ function largeNumbers(...obj){
 
 //Code Here
 
-
+function numberGroups(obj){
+  const {a, b, c} = obj
+  if (a.length > b.length&& a.length > c.length) return a
+  if (b.length > a.length&& b.length > c.length) return b
+  if (c.length > a.length&& c.length > b.length) return c
+  
+}
