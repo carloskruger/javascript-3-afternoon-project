@@ -167,8 +167,8 @@ var myCar = {
 
 function recordCleaner(myCar){
   for (let i = 0; i < myCar['accidents'].length; i++){
-    if(myCar['accidents'][i]['atFaultForAccident']===true){
-      myCar['accidents'][i]['atFaultForAccident']=false
+    if(myCar['accidents'][i]['atFaultForAccident']=== true){
+      myCar['accidents'][i]['atFaultForAccident'] = false
     }
   }
   return myCar
@@ -198,8 +198,8 @@ function looper(numsArr){
         numsArr[i][j] = 'even'
       } else {  numsArr[i][j] = 'odd'}
     }
-
   }
   return numsArr
 }
+
 

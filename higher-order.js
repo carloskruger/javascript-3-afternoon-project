@@ -133,7 +133,10 @@ function reducer (accumulator, currentValue){
   }
 } 
 
-let bobsTotal  = purchases.reduce(reducer)
+let bobsTotal  = purchases
+.filter(currentValue=>(currentValue['owner']  === "Bob"))
+.reduce((acc,currentValue)=> acc + currentValue['price'],0)
+
 
 
 
